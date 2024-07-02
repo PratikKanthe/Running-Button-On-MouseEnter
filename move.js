@@ -4,12 +4,12 @@ let isMoving = true;
 let caught = false;
 
 function foo() {
-  var randX = Math.floor(Math.random() * (window.innerWidth - 100));
-  var randY = Math.floor(Math.random() * (window.innerHeight - 100));
-  console.log([randX, randY]);
+  var randomX = Math.floor(Math.random() * (window.innerWidth - 100));
+  var randomY = Math.floor(Math.random() * (window.innerHeight - 100));
+  console.log([randomX, randomY]);
   caller.style.transition = "left 0.4s ease, top 0.4s ease";
-  caller.style.left = randX + "px";
-  caller.style.top = randY + "px";
+  caller.style.left = randomX + "px";
+  caller.style.top = randomY + "px";
 }
 
 caller.addEventListener("mouseenter", function () {
